@@ -1,12 +1,24 @@
 class StringUtility:
   def __init__(self, string):
+    '''
+	takes in string as parameter and create StringUtility object 
+	args: (string) takes in string datatype for methods to manimupate 
+	'''
     self.string= string
 
   def __str__(self):
-    #new_string= ""
-    #new_string += self.string
+    '''
+	returns the original string that was passed to __init__()
+	args: none
+	return: (string) original string that was passed to __init__
+	'''
     return self.string
   def vowels(self):
+    '''
+	counts the number of vowels in the given string
+	args: none
+	return: (int) number of vowels in the given string
+	'''
     count=0
     vowels= ("a","e","i","o","u")
     for i in range(len(self.string)):
@@ -19,6 +31,11 @@ class StringUtility:
     else:
       return str(count)
   def bothEnds(self):
+    '''
+	create a string with first and last two letter of the given string
+	args: none
+	return: (string) new string that was created by manipulating the given string
+	'''
     bothends= ""
     if len(self.string) <=2:
       return bothends
@@ -29,6 +46,11 @@ class StringUtility:
         bothends+= self.string[j]
       return bothends
   def fixStart(self):
+    '''
+	create a string with the first letter repeating switched with asterics
+	args: none
+	return: (string) new string that was created by manipulating the given string
+	'''
     if len(self.string)<=1:
       return self.string
     else:
@@ -45,16 +67,25 @@ class StringUtility:
             returining_string+= self.string[i]
     return returining_string
   def asciiSum(self):
+    '''
+	calculates the sum of ASCII values of the characters in the given string
+	args: none
+	return: (int) the sum of all ASCII value in the given string
+	'''
     sum_of_ascii=0
     for i in range(len(self.string)):
       sum_of_ascii+= ord(self.string[i])
     return sum_of_ascii
   def cipher(self):
+    '''
+	encodes the given string by pushing every letter by the length of the string in terms of the ASCII code 
+	args: none
+	return: (string) encoded string created by manipulating the given string
+	'''
     encoded_string=""
     first_letter_lower="a"
     first_letter_upper="A"
     number_of_letter_in_alpha= 26
-    wrap_around_increment= 1
     length_of_string=len(self.string)
     for i in range(len(self.string)):
       if self.string[i].isalpha():

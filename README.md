@@ -8,18 +8,18 @@
 Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- < Provide a short description of your program's functionality. No more than a couple sentences. >
+ create new strings based on given strings by specific algorithms. Tested by the codes given in main.py
 
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 1
 
-Grace days remaining: < # >/5
+Grace days remaining: 4/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+ none
 
 ## REFERENCES:
- < List any outside resources used >
-
+1. http://sticksandstones.kstrom.com/appen.html
+2. https://www.w3schools.com/python/ref_func_ord.asp
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+ none
